@@ -14,6 +14,9 @@ class BarChartExample extends StatelessWidget {
           BarChartData(
             barTouchData: BarTouchData(
               enabled: true,
+              touchTooltipData: BarTouchTooltipData(
+
+              )
             ),
             maxY: 110, // y축 최대값
             barGroups: [
@@ -43,7 +46,7 @@ class BarChartExample extends StatelessWidget {
               ),
             ),
             gridData: FlGridData(
-              show: false,
+              show: false
             ),
             // TODO 테두리
             borderData: FlBorderData(

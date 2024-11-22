@@ -1,4 +1,5 @@
 import 'package:chart_example/bar_chart_example.dart';
+import 'package:chart_example/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const BarChartExample(),
+      home: const HomePage(),
     );
   }
 }
