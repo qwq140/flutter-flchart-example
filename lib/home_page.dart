@@ -1,6 +1,7 @@
 import 'package:chart_example/bar_chart_example.dart';
 import 'package:chart_example/donut_chart_example.dart';
 import 'package:chart_example/line_chart_example.dart';
+import 'package:chart_example/scatter_chart_example.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -49,6 +50,18 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: Text('Donut Chart Example'),
+            ),
+            SizedBox(height: 12),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ScatterChartExample(),
+                  ),
+                );
+              },
+              child: Text('Scatter Chart Example'),
             ),
           ],
         ),
