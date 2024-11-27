@@ -1,5 +1,6 @@
 import 'package:chart_example/bar_chart_example.dart';
 import 'package:chart_example/donut_chart_example.dart';
+import 'package:chart_example/gauge_chart_example.dart';
 import 'package:chart_example/line_chart_example.dart';
 import 'package:chart_example/radar_chart_example.dart';
 import 'package:chart_example/scatter_chart_example.dart';
@@ -75,6 +76,18 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: Text('Radar Chart Example'),
+            ),
+            SizedBox(height: 12),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GaugeChartExample(),
+                  ),
+                );
+              },
+              child: Text('Gauge Chart Example'),
             ),
           ],
         ),
