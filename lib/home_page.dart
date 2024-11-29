@@ -4,6 +4,7 @@ import 'package:chart_example/base/line_chart_example.dart';
 import 'package:chart_example/base/radar_chart_example.dart';
 import 'package:chart_example/charts/gauge_chart_example.dart';
 import 'package:chart_example/base/scatter_chart_example.dart';
+import 'package:chart_example/charts/histogram_example.dart';
 import 'package:chart_example/charts/stacked_bar_chart_example.dart';
 import 'package:flutter/material.dart';
 
@@ -101,6 +102,18 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: Text('Stacked Bar Chart Example'),
+            ),
+            SizedBox(height: 12),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HistogramExample(),
+                  ),
+                );
+              },
+              child: Text('Histogram Example'),
             ),
           ],
         ),
