@@ -1,9 +1,10 @@
-import 'package:chart_example/bar_chart_example.dart';
-import 'package:chart_example/donut_chart_example.dart';
-import 'package:chart_example/gauge_chart_example.dart';
-import 'package:chart_example/line_chart_example.dart';
-import 'package:chart_example/radar_chart_example.dart';
-import 'package:chart_example/scatter_chart_example.dart';
+import 'package:chart_example/base/bar_chart_example.dart';
+import 'package:chart_example/base/donut_chart_example.dart';
+import 'package:chart_example/base/line_chart_example.dart';
+import 'package:chart_example/base/radar_chart_example.dart';
+import 'package:chart_example/charts/gauge_chart_example.dart';
+import 'package:chart_example/base/scatter_chart_example.dart';
+import 'package:chart_example/charts/stacked_bar_chart_example.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -88,6 +89,18 @@ class HomePage extends StatelessWidget {
                 );
               },
               child: Text('Gauge Chart Example'),
+            ),
+            SizedBox(height: 12),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => StackedBarChartExample(),
+                  ),
+                );
+              },
+              child: Text('Stacked Bar Chart Example'),
             ),
           ],
         ),
